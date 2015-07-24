@@ -1,0 +1,39 @@
+@import "client/styles/variables.import.less";
+
+.navigation {
+
+    position: fixed;
+    top: 4px;
+    left: 4px;
+    z-index: 9999;
+
+    & > div {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-color: black;
+        cursor: pointer;
+        border-radius: 8px;
+        border: 2px solid black;
+
+        &.active {
+            background-color: white;
+        }
+    }
+}
+
+.preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    .notes {
+        width: 100%;
+        height: auto;
+    }
+}

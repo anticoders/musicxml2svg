@@ -1,0 +1,12 @@
+<template name="preview">
+    {{#droparea}}
+    <div class="navigation">
+        {{#each files}}
+        <div class="{{maybeActive}}" data-action="render"></div>
+        {{/each}}
+    </div>
+    <div class="preview">
+        <div class="notes"></div>
+    </div>
+    {{/droparea}}
+</template>
