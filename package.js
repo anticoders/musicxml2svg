@@ -16,7 +16,9 @@ Package.onUse(function (api) {
     'lib/musicxml.js',
     'lib/utils.js',
     'lib/buildTree.js',
-    'lib/parser.js',
+    'lib/parser2.js',
+    'lib/parsers.js',
+    'lib/elements.js',
     'lib/render.js',
 
   ], ['client', 'server']);
